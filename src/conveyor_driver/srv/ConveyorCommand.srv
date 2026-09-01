@@ -1,0 +1,4 @@
+uint16 frequency
+---
+bool success
+string message
