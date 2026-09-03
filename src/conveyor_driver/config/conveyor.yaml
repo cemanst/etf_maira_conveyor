@@ -1,0 +1,13 @@
+conveyor_driver:
+  ros__parameters:
+    driver_type: "opc_ua"            # mock or opc_ua
+    ip: "10.118.5.83"
+    port: 4840
+    username: "etfrobot"
+    password: "Etfrobot1!"
+    default_speed_mps: 0.1
+    speed_min_mps: 0.05
+    speed_max_mps: 0.2
+    encoder_scale: 1.0
+    watchdog_timeout: 3600.0
+    control_loop_hz: 20.0
