@@ -25,9 +25,11 @@ plc_frequency = round((speed_mps / 0.005) * 10)
 ```
 
 Example:
-- requested speed = 0.5 m/s
-- real frequency = 100 Hz
-- PLC value written = 1000
+- requested speed = 0.2 m/s
+- real frequency = 40 Hz
+- PLC value written = 400
+
+Note: The conveyor speed is in range [0,2.5] m/s. 
 
 ## Quickstart
 
@@ -55,7 +57,7 @@ OPC UA client connected successfully (security none).
 ### 3. Set the target speed in m/s
 
 ```bash
-ros2 param set /conveyor_driver conveyor_speed_mps 0.5
+ros2 param set /conveyor_driver conveyor_speed_mps 0.2
 ```
 
 ### 4. Start the conveyor
